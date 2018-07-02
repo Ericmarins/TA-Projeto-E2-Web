@@ -36,7 +36,7 @@
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>ADMINISTRADOR</role-name>
+            <role-name>STAFF</role-name>
         </auth-constraint>
         <user-data-constraint>
             <description/>
@@ -57,7 +57,7 @@
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>ADMINISTRADOR</role-name>
+            <role-name>STAFF</role-name>
         </auth-constraint>
         <user-data-constraint>
             <description/>
@@ -79,8 +79,8 @@
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>ADMINISTRADOR</role-name>
-            <role-name>USUARIO</role-name>
+            <role-name>STAFF</role-name>
+            <role-name>PLAYER</role-name>
         </auth-constraint>
         <user-data-constraint>
             <description/>
@@ -116,11 +116,11 @@
     </login-config>
     <!-- Papéis de segurança -->
     <security-role>
-        <description>Administrador</description>
-        <role-name>ADMINISTRADOR</role-name>
+        <description>Staff</description>
+        <role-name>STAFF</role-name>
     </security-role>
     <security-role>
-        <description>Usuario</description>
-        <role-name>USUARIO</role-name>
+            <description>Player</description>
+        <role-name>PLAYER</role-name>
     </security-role>
 </web-app>

@@ -94,7 +94,7 @@ public class DAOGenerico<TIPO> implements Serializable {
         return em.createQuery(jpql).getResultList();
     }
 
-    @RolesAllowed("ADMINISTRADOR")
+    @RolesAllowed("STAFF")
     public void persist(TIPO obj) throws Exception {
         em.persist(obj);
     }
@@ -107,7 +107,7 @@ public class DAOGenerico<TIPO> implements Serializable {
         return (TIPO) em.find(classePersistente, id);
     }
 
-    @RolesAllowed("ADMINISTRADOR")
+    @RolesAllowed("STAFF")
     public void remover(TIPO obj) throws Exception {
         obj = em.merge(obj);
         em.remove(obj);

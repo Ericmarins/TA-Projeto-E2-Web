@@ -14,7 +14,7 @@
                 <b:navBar brand="TA">
                     <b:navbarLinks>
                         <b:navLink value="Inicio" outcome="inicio"/>
-                        <b:dropMenu value="Manutenção" rendered="#{p:ifGranted('ADMINISTRADOR')}">
+                        <b:dropMenu value="Manutenção" rendered="#{p:ifGranted('STAFF')}">
                             <b:navCommandLink value="Carta" ajax="false"
                                               action="#{controleCarta.listar()}"/>
                             <b:navCommandLink value="Jogador" ajax="false"
