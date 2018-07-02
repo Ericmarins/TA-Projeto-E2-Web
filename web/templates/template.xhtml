@@ -13,7 +13,7 @@
             <h:form id="formMenu">
                 <b:navBar brand="TA">
                     <b:navbarLinks>
-                        <b:navLink value="Inicio" outcome="inicio" rendered="#{controleLogin.jogadorAutenticado != null}"/>
+                        <b:navLink value="Inicio" outcome="inicio"/>
                         <b:dropMenu value="Manutenção" rendered="#{p:ifGranted('ADMINISTRADOR')}">
                             <b:navCommandLink value="Carta" ajax="false"
                                               action="#{controleCarta.listar()}"/>
